@@ -17,7 +17,7 @@ import time
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    token='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'
+    token='write your hf token here'
     parser.add_argument("--model-name","-m", type=str, required=False, default="FasterDecoding/medusa-v1.0-vicuna-7b-v1.5", help="The Huggingface medusa model to be used for inference")
     parser.add_argument("--hf-token","-token", type=str, required=False,default=token, help="The Huggingface token for accessing Llama weights")
     parser.add_argument("--use-no-medusa-heads","-nmh", type=int, required=False, default=5, help="The number of medusa heads to be used for inference")
