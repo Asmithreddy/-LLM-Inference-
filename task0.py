@@ -45,7 +45,7 @@ def get_dataloader(tokenizer, hf_token, max_input_len=512, no_examples=50):
     return dataloader
 
 if __name__ == "__main__":
-    token='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'
+    token='write your token here'
     parser = argparse.ArgumentParser()
     parser.add_argument("--hf-token","-token", type=str, required=False,default=token, help="The Huggingface token for accessing Llama weights")
     parser.add_argument("--model-name","-m", type=str, required=False, default="meta-llama/Llama-2-7b-hf", help="The Huggingface model to be used for inference")
