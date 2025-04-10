@@ -12,7 +12,7 @@ from task0 import get_dataloader, set_seed, clean_text
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    token='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'
+    token='write your token here'
     parser.add_argument("--hf-token","-token", type=str, required=False,default=token, help="The Huggingface token for accessing Llama weights")
     parser.add_argument("--word-list","-wl", type=str, required=False, default="word_lists.txt", help="The path of the word list for constrained decoding")
     parser.add_argument("--model-name","-m", type=str, required=False, default="meta-llama/Llama-2-7b-chat-hf", help="The Huggingface model to be used for inference")
